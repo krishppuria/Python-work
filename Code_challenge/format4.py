@@ -1,0 +1,5 @@
+string=input("Enter string: ")
+lst=string.split()
+lst.reverse()
+f_string=" ".join(lst)
+print(f_string)

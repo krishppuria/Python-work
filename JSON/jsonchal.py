@@ -1,0 +1,43 @@
+import json
+mystr="""
+{
+	"faculty": [{
+
+			"fname": "krishna",
+			"lname": "parasrampuria",
+			"photo": "url.com",
+			"department": "CS(cloud)",
+			"research": [{
+				"field1": "python",
+				"field2": "securuty"
+			}],
+			"contact": [{
+				"mobile": "9643421887",
+				"email": "krishna.agarwal961@gmail.com"
+			}]
+
+		},
+
+		{
+			"fname": "raj sir",
+			"lname": "anand",
+			"photo": "url.com",
+			"department": "Cloud",
+			"research": [{
+				"field1": "computer networks",
+				"field2": "fod"
+			}],
+			"contact": [{
+				"mobile": "778524152",
+				"email": "rajanand@gmail.com"
+			}]
+		}
+	]
+
+}
+"""
+print(mystr)
+jsonstr=json.loads(mystr)
+print (jsonstr)
+print(jsonstr['faculty'])
+print(jsonstr['faculty'][0])
